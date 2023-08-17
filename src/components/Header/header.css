@@ -1,0 +1,28 @@
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+
+        transform: translateY(0%);
+    }
+    to {
+        opacity: 0;
+        display: none;
+        transform: translateY(-200%);
+    }
+}
+@keyframes mergeNavbar {
+    from {
+        opacity: 0;
+        height: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        height: 100%;
+        transform: translateY(0%);
+    }
+}
+
+.animate-shrink {
+    animation: fadeOut 0.5s ease forwards;
+}
