@@ -68,7 +68,7 @@ const Header = () => {
     // animation scrolling for sub-navbar
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 150) {
                 setSubNavBarToggle(true);
             } else {
                 setSubNavBarToggle(false);
@@ -97,13 +97,16 @@ const Header = () => {
         // duration: 2000,
         from: {
             opacity: 1,
-            transform: 'translateY(-100%)',
+            backgroundColor: 'white',
+            transform: 'translateY(-120%)',
+            height: 'fitContent',
         },
         to: {
             opacity: subNavBarToggle ? 0 : 1,
             transform: subNavBarToggle
                 ? 'translateY(-100%)'
                 : 'translateY(0%) ',
+            height: '',
         },
         config: {
             duration: 300, // Adjust this value for faster animation
@@ -112,9 +115,9 @@ const Header = () => {
     });
 
     return (
-        <div id='container' className='w-full fixed bg-white '>
-            <div class='bg-white z-0 w-full h-[90px] border-y border-gray-400 dark:bg-gray-900   '>
-                <div class='w-[95%] flex flex-wrap items-center justify-between mx-auto p-4  '>
+        <div id='container' className='w-full fixed bg-white z-20 h-[90px]  '>
+            <div class='bg-white z-0 w-full border-y border-gray-400 dark:bg-gray-900   '>
+                <div class='w-[95%] flex flex-wrap items-center justify-between mx-auto p-4 h-[90px] max-w-screen-xl'>
                     <a href='https://flowbite.com/' class='flex items-center'>
                         <img
                             src='https://flowbite.com/docs/images/logo.svg'
@@ -198,11 +201,11 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            {!subNavBarToggle && (
+            {
                 <animated.div
-                    className=' border-b py-3 px-4  border-gray-400 transition-transform duration-1000 '
+                    className='border-b py-3 px-5 sticky border-gray-400  duration-1000 bg-white '
                     style={subNavbarAnimation}>
-                    <ul className='flex justify-between relative '>
+                    <ul className='flex justify-between bg-white border-gray-400 '>
                         {subNavBar.map((Topic, index) => {
                             if (typeof Topic === 'string') {
                                 return (
@@ -211,7 +214,7 @@ const Header = () => {
                                         onMouseOver={() => {
                                             subMenuLeave();
                                         }}
-                                        className='font-light w-[12%] text-center'>
+                                        className='font-light w-[12%]  text-center'>
                                         {Topic}
                                     </li>
                                 );
@@ -285,7 +288,7 @@ const Header = () => {
                         })}
                     </ul>
                 </animated.div>
-            )}
+            }
         </div>
     );
 };

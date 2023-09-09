@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
                     alt='anh san pham'
                 />
             </div>
-            <div className='flex justify-end'>
+            <div className='flex justify-end px-2'>
                 {product?.proImage.map((proClass, index) => (
                     <div className='w-[16px] h-[16px] mb-[5px] mr-[5px]'>
                         <img
@@ -57,11 +57,11 @@ const ProductCard = ({ product }) => {
                 <a
                     href='#'
                     title='Levents® Knit Polo/ Brown'
-                    class='text-lg text-gray-500 font-extralight leading-4 uppercase'>
+                    class='text-lg text-gray-500 font-extralight leading-3 uppercase'>
                     {product?.proName}
                 </a>
                 <div
-                    class='text-lg text-black font-extralight leading-4 uppercase'
+                    class='text-lg text-black font-extralight leading-3 uppercase'
                     data-price='530000'>
                     <span class='text-lg text-black'>
                         <span class='woocommerce-Price-amount amount'>

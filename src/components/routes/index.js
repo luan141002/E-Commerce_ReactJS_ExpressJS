@@ -8,33 +8,33 @@ import Products from '../../pages/Products';
 import ProductDetails from '../../pages/ProductDetails';
 
 // Layouts
-import defaultLayout from '../Layout/defaultLayout';
+import DefaultLayout from '../Layout/defaultLayout';
 
 const publicRoutes = [
     {
         path: '/',
         component: Home,
-        layout: defaultLayout,
+        layout: DefaultLayout,
     },
     {
         path: '/products',
         component: Products,
-        layout: defaultLayout,
+        layout: DefaultLayout,
     },
     {
-        path: '/products/:productid',
+        path: '/products/:id',
         component: ProductDetails,
-        layout: '',
+        layout: DefaultLayout,
     },
     {
         path: '/about',
         component: About,
-        layout: defaultLayout,
+        layout: DefaultLayout,
     },
     {
         path: '/contact',
         component: Contact,
-        layout: defaultLayout,
+        layout: DefaultLayout,
     },
     {
         path: '/search',
