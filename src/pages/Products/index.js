@@ -10,7 +10,7 @@ function ProductList() {
     const [listNumber, setlistNumber] = useState(0);
     function seeMore() {
         for (var i = 0; i < listNumber + 1; i++) {
-            setProductList([...ProductList, ...products]);
+            setProductList([...productList, ...products]);
         }
         setlistNumber(listNumber + 1);
     }

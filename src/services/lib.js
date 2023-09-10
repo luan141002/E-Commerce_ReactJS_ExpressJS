@@ -10,6 +10,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -17,6 +23,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -24,6 +36,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -38,6 +56,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -45,6 +69,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -52,6 +82,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -67,6 +103,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -74,6 +116,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -81,6 +129,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -95,6 +149,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -102,6 +162,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -109,6 +175,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -123,6 +195,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -130,6 +208,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -137,6 +221,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -151,6 +241,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -158,6 +254,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -165,6 +267,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -179,6 +287,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -186,6 +300,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -193,6 +313,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
@@ -207,6 +333,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877495569_a7056de289863ece93a10d3cc75aed5e-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877502788_e525b31ba8ddb6643f5f52b2d4dec44d-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://levents.asia/wp-content/uploads/co5.jpg',
@@ -214,6 +346,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877138178_b220a252eb178e9d9f858074eeeb4317-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877126929_858a9c2bee5deac3d50aedd8aafdfefe-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
             {
                 color: 'https://www.al.com/resizer/ILBcdq1ksZC39_8hhnJ_HXsP9j0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG',
@@ -221,6 +359,12 @@ export const products = [
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877336753_3e992dc59ee081dd623cf788b97e90ce-400x500.jpg',
                 backSide:
                     'https://levents.asia/wp-content/uploads/2023/07/z4504877347306_6264e5af26638d450ebe38ff62324165-400x500.jpg',
+                frontCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877521644_046712634b9003202197314df053fa30-2048x2048.jpg',
+                backCollar:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877515256_4b5a792b846b5f2603ba3d364d595ce4-2048x2048.jpg',
+                materialQuality:
+                    'https://levents.asia/wp-content/uploads/2023/07/z4504877510701_b218a4339c727234e7529e7bd2902d87-2048x2048.jpg',
             },
         ],
     },
