@@ -5,6 +5,7 @@ import {
     faUser,
     faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 import { easings } from '@react-spring/web';
 import './header.css';
@@ -13,18 +14,19 @@ const Header = () => {
     // navbar and subNavbar content
     const collections = ['ITHINKIDO', 'ONE PIECE', 'WannaOne', 'colleciton 4'];
     const subNavBar = [
-        'About Us',
-        { colName: 'Cửa hàng', subCol: [1, 2, 3, 4, 5] },
-        'Giảm giá',
-        'Bộ sưu tập',
-        'Mix and match',
-        { colName: 'Bài viết', subCol: [1, 2, 3, 4, 5] },
-        'Liên hệ',
+        { colName: 'About Us', link: '/' },
+        { colName: 'Cửa hàng', link: '/products', subCol: [1, 2, 3, 4, 5] },
+        { colName: 'Giảm giá', link: '/' },
+        { colName: 'Bộ sưu tập', link: '/' },
+        { colName: 'Mix and match', link: '/' },
+        { colName: 'Bài viết', link: '/', subCol: [1, 2, 3, 4, 5] },
+        { colName: 'Liên hệ', link: '/' },
         {
             colName: 'Customer Service',
+            link: '/',
             subCol: [1, 2, 3, 4, 5],
         },
-        'Tuyển dụng',
+        { colName: 'Tuyển dụng', link: '/' },
     ];
 
     // Menu
@@ -207,7 +209,7 @@ const Header = () => {
                     style={subNavbarAnimation}>
                     <ul className='flex justify-between bg-white border-gray-400 '>
                         {subNavBar.map((Topic, index) => {
-                            if (typeof Topic === 'string') {
+                            if (!Topic.subCol) {
                                 return (
                                     <li
                                         key={index}
@@ -215,7 +217,9 @@ const Header = () => {
                                             subMenuLeave();
                                         }}
                                         className='font-light w-[12%]  text-center'>
-                                        {Topic}
+                                        <Link to={Topic.link}>
+                                            {Topic.colName}
+                                        </Link>
                                     </li>
                                 );
                             } else {
@@ -238,7 +242,9 @@ const Header = () => {
                                             key={index}
                                             name='dropdownButton'
                                             className='font-light '>
-                                            {Topic.colName}{' '}
+                                            <Link to={Topic.link}>
+                                                {Topic.colName}
+                                            </Link>{' '}
                                             <FontAwesomeIcon
                                                 icon={faChevronDown}
                                             />
