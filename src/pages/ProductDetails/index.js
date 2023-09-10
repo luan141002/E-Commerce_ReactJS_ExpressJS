@@ -11,6 +11,8 @@ const ProductDetailPage = () => {
     const [currentColor, setCurrentColor] = useState(
         product.current.proImage[0]
     );
+    const [selectedSize, setSelectedSize] = useState(0);
+
     return (
         <div>
             <section class='overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800'>
