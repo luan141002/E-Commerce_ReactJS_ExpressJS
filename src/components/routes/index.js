@@ -5,6 +5,8 @@ import Home from '../../pages/Home';
 import About from '../../pages/About';
 import Contact from '../../pages/Contact';
 import Products from '../../pages/Products';
+import Login from '../../pages/Login';
+import RegisterPage from '../../pages/Register';
 import ProductDetails from '../../pages/ProductDetails';
 
 // Layouts
@@ -37,8 +39,13 @@ const publicRoutes = [
         layout: DefaultLayout,
     },
     {
-        path: '/search',
-        component: '',
+        path: '/login',
+        component: Login,
+        layout: null,
+    },
+    {
+        path: '/register',
+        component: RegisterPage,
         layout: null,
     },
 ];

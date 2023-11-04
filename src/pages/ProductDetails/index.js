@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { products } from '../../services/lib.js';
 
@@ -8,14 +8,25 @@ const ProductDetailPage = () => {
     const [mainPicture, setMainPicture] = useState(
         product.current.proImage[0].frontSide
     );
+    const proSize = ['XS', 'S', 'M', 'L', 'XL', '2XL'];
     const [currentColor, setCurrentColor] = useState(
         product.current.proImage[0]
     );
     const [selectedSize, setSelectedSize] = useState(0);
-
+    useMemo(() => {
+        setMainPicture(currentColor.frontSide);
+    }, [currentColor]);
     return (
         <div>
-            <section class='overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800'>
+            <section class='overflow-hidden px-[1.5rem] space-y-6 bg-white py-11 font-poppins dark:bg-gray-800'>
+                <div className='w-full'>
+                    <label className='font-light hover:font-normal'>
+                        {' '}
+                        Home / <span className='font-normal '>
+                            Shopping
+                        </span>{' '}
+                    </label>
+                </div>
                 <div class='max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6'>
                     <div class='flex flex-wrap -mx-4'>
                         <div class='w-full px-4 md:w-1/2 '>
@@ -29,6 +40,11 @@ const ProductDetailPage = () => {
                                                 src={currentColor.frontSide}
                                                 alt=''
                                                 class='object-cover w-full lg:h-20'
+                                                onClick={() =>
+                                                    setMainPicture(
+                                                        currentColor.frontSide
+                                                    )
+                                                }
                                             />
                                         </a>
                                     </div>
@@ -40,6 +56,11 @@ const ProductDetailPage = () => {
                                                 src={currentColor.backSide}
                                                 alt=''
                                                 class='object-cover w-full lg:h-20'
+                                                onClick={() =>
+                                                    setMainPicture(
+                                                        currentColor.backSide
+                                                    )
+                                                }
                                             />
                                         </a>
                                     </div>
@@ -51,6 +72,11 @@ const ProductDetailPage = () => {
                                                 src={currentColor.frontCollar}
                                                 alt=''
                                                 class='object-cover w-full lg:h-20'
+                                                onClick={() =>
+                                                    setMainPicture(
+                                                        currentColor.frontCollar
+                                                    )
+                                                }
                                             />
                                         </a>
                                     </div>
@@ -62,6 +88,11 @@ const ProductDetailPage = () => {
                                                 src={currentColor.backCollar}
                                                 alt=''
                                                 class='object-cover w-full lg:h-20'
+                                                onClick={() =>
+                                                    setMainPicture(
+                                                        currentColor.backCollar
+                                                    )
+                                                }
                                             />
                                         </a>
                                     </div>
@@ -75,6 +106,11 @@ const ProductDetailPage = () => {
                                                 }
                                                 alt=''
                                                 class='object-cover w-full lg:h-20'
+                                                onClick={() =>
+                                                    setMainPicture(
+                                                        currentColor.materialQuality
+                                                    )
+                                                }
                                             />
                                         </a>
                                     </div>
@@ -188,6 +224,12 @@ const ProductDetailPage = () => {
                                                         className='w-4 h-4 mb-[5px] border border-transparent hover:border-blue-400 dark:border-gray-800 dark:hover:border-gray-400'
                                                         onClick={() => {
                                                             setPickColor(index);
+                                                            setCurrentColor(
+                                                                product.current
+                                                                    .proImage[
+                                                                    index
+                                                                ]
+                                                            );
                                                         }}
                                                         style={{
                                                             border:
