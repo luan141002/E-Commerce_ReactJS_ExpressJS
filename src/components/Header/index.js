@@ -118,8 +118,8 @@ const Header = () => {
 
     return (
         <div id='container' className='w-full fixed bg-white z-20 h-[90px]  '>
-            <div class='bg-white z-0 w-full border-y border-gray-400 dark:bg-gray-900   '>
-                <div class='w-[95%] flex flex-wrap items-center justify-between mx-auto p-4 h-[90px] max-w-screen-xl'>
+            <div class='bg-white shadow-md z-0 w-full border-y border-gray-400 dark:bg-gray-900   '>
+                <div class='w-[95%]  flex flex-wrap items-center justify-between mx-auto p-4 h-[90px] max-w-screen-xl'>
                     <a href='https://flowbite.com/' class='flex items-center'>
                         <img
                             src='https://flowbite.com/docs/images/logo.svg'
