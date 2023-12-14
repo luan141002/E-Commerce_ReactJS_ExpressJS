@@ -1,100 +1,166 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import AuthService from '../../services/AuthService';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegisterPage = () => {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitting },
+        watch,
+    } = useForm();
+    const navigate = useNavigate();
+    const onSubmit = async (data) => {
+        // Gửi dữ liệu đăng ký đi ở đây
+        try {
+            await AuthService.register(
+                data.userName,
+                data.userFirstName,
+                data.userLastName,
+                data.userPassword,
+                data.address,
+                data.contactNumber,
+            );
+            navigate(`/otp/${data.userName}`);
+            toast.success('Register successfully', {
+                position: toast.POSITION.TOP_RIGHT,
+            });
+        } catch (err) {
+            toast.error('Register failed', {
+                position: toast.POSITION.TOP_RIGHT,
+            });
+        }
+    };
     return (
-        <div className='w-full h-screen'>
-            <div class='bg-gray-100 flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8'>
-                <div class='w-full max-w-md space-y-8'>
-                    <div class='bg-white shadow-md rounded-md p-6'>
-                        <img
-                            class='mx-auto h-12 w-auto'
-                            src='https://www.svgrepo.com/show/499664/user-happy.svg'
-                            alt=''
-                        />
-
-                        <h2 class='my-3 text-center text-3xl font-bold tracking-tight text-gray-900'>
+        <div className="w-full h-screen">
+            <div class="bg-gray-100 flex h-screen items-center justify-center px-4 ">
+                <div class="w-full max-w-2xl space-y-8">
+                    <div class="bg-white shadow-md rounded-md p-6">
+                        <h2 class="my-3 text-center text-3xl font-bold tracking-tight text-gray-900">
                             Sign up for an account
                         </h2>
 
-                        <form class='space-y-6' method='POST'>
-                            <div>
-                                <label
-                                    for='new-password'
-                                    class='block text-sm font-medium text-gray-700'>
-                                    Username
-                                </label>
-                                <div class='mt-1'>
+                        <form
+                            onSubmit={handleSubmit(onSubmit)}
+                            className="w-full mx-auto mt-4 p-4 bg-white rounded shadow-md space-y-3"
+                        >
+                            <div className="mb-2 flex flex-col">
+                                <label>Username:</label>
+                                <input
+                                    type="text"
+                                    {...register('userName', {
+                                        required: 'Username is required',
+                                        pattern: {
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                                            message: 'Invalid email address',
+                                        },
+                                    })}
+                                    className="form-input mt-1 p-3 border "
+                                />
+
+                                {errors.userName && <p className="text-red-500 text-sm">{errors.userName.message}</p>}
+                            </div>
+
+                            <div className="flex justify-around">
+                                <div className="mb-2 flex flex-col w-[48%]">
+                                    <label>First Name:</label>
                                     <input
-                                        name='username'
-                                        type='username'
-                                        required
-                                        class='px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm'
+                                        type="text"
+                                        {...register('userFirstName', { required: 'First name is required' })}
+                                        className="form-input mt-1 p-3 border"
                                     />
+
+                                    {errors.userFirstName && (
+                                        <p className="text-red-500 text-sm">{errors.userFirstName.message}</p>
+                                    )}
+                                </div>
+
+                                <div className="mb-2 flex flex-col w-[48%]">
+                                    <label>Last Name:</label>
+                                    <input
+                                        type="text"
+                                        {...register('userLastName', { required: 'Last name is required' })}
+                                        className="form-input mt-1 p-3 border"
+                                    />
+
+                                    {errors.userLastName && (
+                                        <p className="text-red-500 text-sm">{errors.userLastName.message}</p>
+                                    )}
                                 </div>
                             </div>
 
-                            <div>
-                                <label
-                                    for='password'
-                                    class='block text-sm font-medium text-gray-700'>
-                                    Email
-                                </label>
-                                <div class='mt-1'>
-                                    <input
-                                        name='email'
-                                        type='email-address'
-                                        autocomplete='email-address'
-                                        required
-                                        class='px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm'
-                                    />
-                                </div>
+                            <div className="mb-2 flex flex-col ">
+                                <label>Password:</label>
+                                <input
+                                    type="password"
+                                    {...register('userPassword', {
+                                        required: 'Password is required',
+                                        minLength: { value: 8, message: 'Password must be at least 8 characters' },
+                                    })}
+                                    className="form-input mt-1 p-3 border"
+                                />
+
+                                {errors.userPassword && (
+                                    <p className="text-red-500 text-sm">{errors.userPassword.message}</p>
+                                )}
                             </div>
 
-                            <div>
-                                <label
-                                    for='password'
-                                    class='block text-sm font-medium text-gray-700'>
-                                    Password
-                                </label>
-                                <div class='mt-1'>
-                                    <input
-                                        name='password'
-                                        type='password'
-                                        autocomplete='password'
-                                        required
-                                        class='px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm'
-                                    />
-                                </div>
+                            <div className="mb-2 flex flex-col ">
+                                <label>Confirm Password:</label>
+                                <input
+                                    type="password"
+                                    {...register('confirmPassword', {
+                                        validate: (value) =>
+                                            value === watch('userPassword') || 'Passwords do not match',
+                                    })}
+                                    className="form-input mt-1 p-3 border"
+                                />
+
+                                {errors.confirmPassword && (
+                                    <p className="text-red-500 text-sm">{errors.confirmPassword.message}</p>
+                                )}
                             </div>
 
-                            <div>
-                                <label
-                                    for='password'
-                                    class='block text-sm font-medium text-gray-700'>
-                                    Confirm Password
-                                </label>
-                                <div class='mt-1'>
-                                    <input
-                                        name='confirm_password'
-                                        type='password'
-                                        autocomplete='confirm-password'
-                                        required
-                                        class='px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm'
-                                    />
-                                </div>
+                            <div className="mb-2 flex flex-col ">
+                                <label>Address: </label>
+                                <input
+                                    type="text"
+                                    {...register('address', { required: 'Address is required' })}
+                                    className="form-input mt-1 p-3 border"
+                                />
+
+                                {errors.address && <p className="text-red-500 text-sm">{errors.address.message}</p>}
                             </div>
 
-                            <div>
-                                <button
-                                    type='submit'
-                                    class='flex w-full justify-center rounded-md border border-transparent bg-sky-400 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2'>
-                                    Register Account
-                                </button>
+                            <div className="mb-2 flex flex-col ">
+                                <label>Contact Number: </label>
+                                <input
+                                    type="number"
+                                    {...register('contactNumber', {
+                                        required: 'Phone number is required',
+                                        minLength: 8,
+                                    })}
+                                    className="form-input mt-1 p-3 border"
+                                />
                             </div>
+
+                            <button
+                                type="submit"
+                                disabled={isSubmitting}
+                                className={`bg-blue-500 text-white rounded py-2 px-4 ${
+                                    isSubmitting ? 'cursor-not-allowed opacity-50' : ''
+                                }`}
+                            >
+                                Register
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

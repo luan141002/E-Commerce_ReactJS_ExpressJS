@@ -6,12 +6,14 @@ import DefaultLayout from './defaultLayout';
 function Layout() {
     return (
         <Router>
-            <div className='w-full h-screen'>
+            <div className="w-full h-screen">
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;
 
                         let Layout = DefaultLayout;
+
+                        const type = route.type || null;
 
                         if (route.layout) {
                             Layout = route.layout;
@@ -25,7 +27,7 @@ function Layout() {
                                 path={route.path}
                                 element={
                                     <Layout>
-                                        <Page />
+                                        <Page type={type} />
                                     </Layout>
                                 }
                             />

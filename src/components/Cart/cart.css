@@ -1,0 +1,14 @@
+.dropdownCart {
+    position: absolute;
+    top: 4.5rem;
+    right: 4rem;
+}
+.dropdownCart::before {
+    content: ' ';
+    position: absolute;
+    top: -1rem;
+    right: 2rem;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
