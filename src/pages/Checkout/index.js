@@ -25,6 +25,7 @@ const CheckoutPage = () => {
 
     const [totalPrice, setTotalPrice] = useState(0);
     const [billPrice, setBillPrice] = useState(0);
+    const [convertedBillPrice, setConvertedBillPrice] = useState(0);
 
     const [deliveryMethod, setDeliveryMethod] = useState('Standard');
 
@@ -47,6 +48,9 @@ const CheckoutPage = () => {
             }, 0);
             setTotalPrice(totalBillPrice);
             setBillPrice(totalBillPrice + 30000 + totalPrice * (10 / 100));
+            setConvertedBillPrice(billPrice / 24000);
+            console.log(convertedBillPrice);
+            console.log(billPrice / 24000);
         }
         fetchMyAPI();
     }, []);
@@ -311,7 +315,7 @@ const CheckoutPage = () => {
                                     </div>
                                 </fieldset> */}
                                 <div>
-                                    <Paypal setBillPrice={setBillPrice} billPrice={billPrice} />
+                                    <Paypal setBillPrice={setBillPrice} billPrice={convertedBillPrice} />
                                 </div>
                             </div>
                         </div>

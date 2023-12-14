@@ -55,7 +55,7 @@ const LoginPage = () => {
                         }}
                     ></div>
                     <div class="w-full p-8 lg:w-1/2">
-                        <h2 class="text-2xl font-semibold text-gray-700 text-center">Brand</h2>
+                        <h2 class="text-2xl font-semibold text-gray-700 text-center">UNIVERSE SHOP</h2>
                         <p class="text-xl text-gray-600 text-center">Welcome back!</p>
                         <a
                             href="#"

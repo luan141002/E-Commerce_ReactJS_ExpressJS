@@ -13,10 +13,15 @@ const Setting = ({
     upperTextColor,
     lowerTextColor,
     captureScreenshot,
+    sizeSelect,
 }) => {
     const handleSave = () => {
         console.log(tshirtInfo);
     };
+    // State để lưu trữ kích thước được chọn
+
+    // Hàm xử lý sự kiện khi người dùng chọn kích thước
+
     return (
         <div className="mx-auto bg-white shadow-md rounded-md p-4">
             <h3 className="text-center"> Setting</h3>
@@ -93,6 +98,13 @@ const Setting = ({
                 <option>Black</option>
                 <option>Red</option>
                 <option>Blue</option>
+            </select>
+            <select onChange={sizeSelect} className="w-full border py-2 px-3 mb-2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
             </select>
         </div>
     );

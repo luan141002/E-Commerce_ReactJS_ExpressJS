@@ -31,6 +31,7 @@ const ProductCart = ({ lineItem, setReloadCart }) => {
                         <p class="text-base font-semibold text-gray-900">
                             {lineItem?.customProduct?.productEntity?.category?.name}
                         </p>
+                        <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">{lineItem?.customProduct?.size}</p>
                         <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">x{lineItem?.quantity}</p>
                     </div>
 

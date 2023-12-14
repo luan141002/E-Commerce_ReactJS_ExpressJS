@@ -213,24 +213,8 @@ const ProductDetailPage = () => {
                                         </button>
                                     </div>
                                 </div> */}
-                                <div class="flex items-center mb-6">
-                                    <h2 class="w-16 text-xl font-middle text-gray-600 dark:text-gray-400">Size:</h2>
-                                    <div class="flex flex-wrap space-x-2 -mx-2 -mb-2">
-                                        <button class="py-1 mb-2 mr-1 border  text-gray-400 w-11 hover:border-gray-600 dark:border-gray-600 hover:text-gray-600 dark:hover:border-gray-600 dark:text-gray-400">
-                                            XL
-                                        </button>
-                                        <button class="py-1 mb-2 mr-1 border text-gray-400  w-11 hover:border-gray-600 hover:text-gray-600 dark:border-gray-400 dark:hover:border-gray-300 dark:text-gray-400">
-                                            S
-                                        </button>
-                                        <button class="py-1 mb-2 mr-1 border text-gray-400 w-11 hover:border-gray-600 hover:text-gray-600 dark:border-gray-400 dark:hover:border-gray-300 dark:text-gray-400">
-                                            M
-                                        </button>
-                                        <button class="py-1 mb-2 mr-1 border text-gray-400 w-11 hover:border-gray-600 hover:text-gray-600 dark:border-gray-400 dark:hover:border-gray-300 dark:text-gray-400">
-                                            XS
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="w-32 mb-6 ">
+
+                                {/* <div class="w-32 mb-6 ">
                                     <label for="" class="w-full text-xl font-semibold text-gray-700 dark:text-gray-400">
                                         Quantity
                                     </label>
@@ -247,7 +231,7 @@ const ProductDetailPage = () => {
                                             <span class="m-auto text-2xl font-thin">+</span>
                                         </button>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div class="flex flex-wrap items-center -mx-4 ">
                                     <div>
                                         {/* <div class="w-full px-4 mb-4 lg:w-1/2 lg:mb-0">

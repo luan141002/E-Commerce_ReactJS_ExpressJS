@@ -13,12 +13,12 @@ const ProductService = {
         const response = await WebService.get(`/products/${productId}`);
         return await response.json();
     },
-    addCustomProduct: async (productId, body) => {
+    addCustomProduct: async (productId, body, size) => {
         const response = await WebService.postForm(`/${productId}/custom-products`, body);
         return await response.json();
     },
-    addToCart: async (productId, quantity) => {
-        const body = { customProductId: productId, quantity: 1 };
+    addToCart: async (productId, quantity, size) => {
+        const body = { customProductId: productId, quantity: 1, size: size };
         console.log(body);
         const response = await WebService.postJson(`/carts/add-to-cart`, body);
         return response;

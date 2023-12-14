@@ -125,7 +125,7 @@ const Table = ({ type }) => {
                         const processedResults = products?.map((element) => ({
                             productName: element.productName,
                             Image: element.productImages[0].link,
-                            actualPrice: element.actualPrice,
+                            actualPrice: `${element.actualPrice}vnđ`,
                             manufacturer: element.manufacturer,
                             quantity: element.quantity,
                             category: element.category.name,
@@ -162,7 +162,7 @@ const Table = ({ type }) => {
                             Status: element?.orderStatus,
                             Paid: element?.isPaid.toString(),
                             quantity: element?.quantity,
-                            Amount: element?.orderAmount,
+                            Amount: `${element?.orderAmount}vnđ`,
                             Date: element?.createdDate?.toString(),
                             ProductName: element?.customProductEntity?.productEntity?.productName,
                             Image: element?.customProductEntity?.customImages[0]?.link,
@@ -303,6 +303,14 @@ const Table = ({ type }) => {
                 header: 'Image',
             }),
         ];
+    }
+    if (isAdmin.current === true && type === 'products') {
+        const newColumns = columns.filter((column) => column.header !== 'Edit');
+        columns = [...newColumns];
+    }
+    if (isAdmin.current === true && type === 'users') {
+        const newColumns = columns.filter((column) => column.header !== 'Image');
+        columns = [...newColumns];
     }
     const [globalFilter, setGlobalFilter] = useState('');
 

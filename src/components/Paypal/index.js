@@ -1,11 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 
-const Paypal = ({ setBillPrice, billPrice }) => {
+const Paypal = ({ billPrice }) => {
     const paypal = useRef();
 
     useEffect(() => {
-        const convertedBillPrice = billPrice / 24000;
-        console.log(convertedBillPrice);
         window.paypal
             .Buttons({
                 createOrder: (data, actions, err) => {
@@ -16,7 +14,7 @@ const Paypal = ({ setBillPrice, billPrice }) => {
                                 description: 'Cool Looking tShirt',
                                 amount: {
                                     currency_code: 'USD',
-                                    value: 26.06,
+                                    value: `${billPrice}`,
                                 },
                             },
                         ],
@@ -25,11 +23,10 @@ const Paypal = ({ setBillPrice, billPrice }) => {
                 onApprove: async (data, actions) => {
                     const order = await actions.order.capture();
                     console.log(order);
-                    setBillPrice(0);
+                    // setBillPrice(0);
                 },
                 onError: (err) => {
                     console.log(err);
-                    setBillPrice(0);
                 },
             })
             .render(paypal.current);

@@ -25,6 +25,7 @@ const Dashboard = () => {
         lowerTextSize: 34,
         upperTextColor: 'white',
         lowerTextColor: 'white',
+        size: 'L',
     });
     const { productId } = useParams();
     useEffect(() => {
@@ -118,6 +119,9 @@ const Dashboard = () => {
     const handleLowerTextColor = (e) => {
         setTshirtInfo({ ...tshirtInfo, lowerTextColor: e.target.value });
     };
+    const handleSizeSelect = (e) => {
+        setTshirtInfo({ ...tshirtInfo, size: e.target.value });
+    };
 
     return (
         <div className="mx-auto py-5 mt-[5%] p-5">
@@ -141,6 +145,7 @@ const Dashboard = () => {
                         lowerTextSize={handleLowerTextSize}
                         upperTextColor={handleUpperTextColor}
                         lowerTextColor={handleLowerTextColor}
+                        sizeSelect={handleSizeSelect}
                     />
                 </div>
             </div>
@@ -156,7 +161,7 @@ const Dashboard = () => {
                     className="p-4 bg-red-700 mb-2 w-[50%] mx-auto ml-20  text-white hover:border hover:border-white"
                     onClick={async () => {
                         try {
-                            const cartResponse = await ProductService.addToCart(customProductId, 1);
+                            const cartResponse = await ProductService.addToCart(customProductId, 1, tshirtInfo.size);
                             console.log(cartResponse);
                             toast.success('Save to cart successfully', {
                                 position: toast.POSITION.TOP_RIGHT,
