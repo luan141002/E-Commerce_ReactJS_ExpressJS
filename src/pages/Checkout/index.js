@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import ProductCart from '../../components/ProductCart';
 import Paypal from '../../components/Paypal';
 import { faL } from '@fortawesome/free-solid-svg-icons';
@@ -29,13 +29,15 @@ const CheckoutPage = () => {
 
     const [deliveryMethod, setDeliveryMethod] = useState('Standard');
 
+    const bill = useRef();
+
     const handleDeliveryMethodChange = (event) => {
         setDeliveryMethod(event.target.value);
     };
 
-    useMemo(() => {
-        console.log(paymentStatus);
-    }, [paymentStatus]);
+    // useMemo(() => {
+    //     console.log(paymentStatus);
+    // }, [paymentStatus]);
 
     useEffect(() => {
         async function fetchMyAPI() {
@@ -49,8 +51,10 @@ const CheckoutPage = () => {
             setTotalPrice(totalBillPrice);
             setBillPrice(totalBillPrice + 30000 + totalPrice * (10 / 100));
             setConvertedBillPrice(billPrice / 24000);
-            console.log(convertedBillPrice);
-            console.log(billPrice / 24000);
+
+            bill.current = (totalBillPrice + 30000 + totalPrice * (10 / 100)) / 24000;
+
+            console.log(bill.current);
         }
         fetchMyAPI();
     }, []);
@@ -294,7 +298,7 @@ const CheckoutPage = () => {
                             <div class="mt-10 border-t border-gray-200 pt-10">
                                 <h2 class="text-lg font-medium text-gray-900">Payment</h2>
 
-                                {/* <fieldset class="mt-4">
+                                <fieldset class="mt-4">
                                     <legend class="sr-only">Payment type</legend>
                                     <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
                                         <div class="flex items-center">
@@ -313,9 +317,9 @@ const CheckoutPage = () => {
                                             </label>
                                         </div>
                                     </div>
-                                </fieldset> */}
+                                </fieldset>
                                 <div>
-                                    <Paypal setBillPrice={setBillPrice} billPrice={convertedBillPrice} />
+                                    {bill.current && <Paypal setBillPrice={setBillPrice} billPrice={bill.current} />}
                                 </div>
                             </div>
                         </div>
@@ -361,7 +365,9 @@ const CheckoutPage = () => {
                                                     toast.success('Place order successfully', {
                                                         position: toast.POSITION.TOP_RIGHT,
                                                     });
-                                                    navigate('/homepage');
+                                                    setTimeout(function () {
+                                                        navigate('/homepage');
+                                                    }, 3000);
                                                 }
                                             } catch (err) {
                                                 toast.error('Place order failed', {

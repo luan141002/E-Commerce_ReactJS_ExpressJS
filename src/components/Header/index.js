@@ -107,7 +107,7 @@ const Header = () => {
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                                 Universe shop
                             </span>
-                            <p className="text-gray-500 text-xs ">skincare and clinic</p>
+                            <p className="text-gray-500 text-xs ">Define your own style</p>
                         </div>
                     </a>
                     <div className="flex flex-col w-[40%] box-border">
